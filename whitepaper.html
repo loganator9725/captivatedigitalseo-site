@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structured Static Publishing System White Paper</title>
+  <style>
+    :root {
+      --ink: #172132;
+      --muted: #5b6472;
+      --line: #d8dde6;
+      --accent: #213a63;
+      --paper: #ffffff;
+      --bg: #eef2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    .page {
+      width: min(8.5in, calc(100% - 2rem));
+      margin: 1rem auto;
+      padding: 0.85in 0.8in 0.9in;
+      background: var(--paper);
+      box-shadow: 0 12px 30px rgba(23, 33, 50, 0.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 0.75rem;
+      font: 700 0.8rem/1.4 "Segoe UI", Arial, sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.15rem;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 0.9rem 0 1.4rem;
+      font: 400 1rem/1.7 "Segoe UI", Arial, sans-serif;
+      color: var(--muted);
+    }
+
+    .summary {
+      margin: 0 0 1.6rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      background: #f8fafc;
+      font: 400 0.98rem/1.7 "Segoe UI", Arial, sans-serif;
+    }
+
+    h2 {
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin: 0.7rem 0;
+      font-size: 0.98rem;
+      line-height: 1.72;
+    }
+
+    ol,
+    ul {
+      margin: 0.55rem 0 0.9rem 1.2rem;
+      padding: 0;
+      font: 400 0.98rem/1.72 "Segoe UI", Arial, sans-serif;
+    }
+
+    li {
+      margin: 0.2rem 0;
+    }
+
+    .two-up {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 0.8rem;
+    }
+
+    .panel {
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--line);
+      background: #fbfcfe;
+    }
+
+    .panel h3 {
+      margin: 0 0 0.45rem;
+      font-size: 1rem;
+    }
+
+    .panel p,
+    .panel li {
+      font-size: 0.94rem;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      padding-top: 0.6rem;
+      border-top: 1px solid var(--line);
+      font: 400 0.84rem/1.5 "Segoe UI", Arial, sans-serif;
+      color: var(--muted);
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: auto;
+        margin: 0;
+        padding: 0.55in 0.55in 0.65in;
+        box-shadow: none;
+      }
+
+      h2,
+      .panel,
+      .summary {
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .two-up {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        width: calc(100% - 1rem);
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <p class="eyebrow">White Paper</p>
+    <h1>Structured Static Publishing System</h1>
+    <p class="subtitle">A multi-page site generation, metadata governance, performance optimization, preview, and deployment packaging system for static publishing workflows.</p>
+
+    <section class="summary">
+      This project is a governed static publishing platform. It turns structured page data into a complete multi-page website, injects discovery metadata, optimizes delivery artifacts, and packages the final output into a deployment-ready directory. Instead of hand-maintaining individual HTML pages, the system uses one shared content model, one shared page template, and one build pipeline.
+    </section>
+
+    <h2>Executive Summary</h2>
+    <p>The system provides a deterministic workflow for publishing a multi-page static site from centralized definitions. Route content is modeled once, page layout is rendered from a shared template, metadata is generated automatically, and performance optimizations are applied as part of the build. The final result is a deployable artifact that preserves consistency across navigation, structured data, sitemap coverage, asset handling, and page output.</p>
+
+    <h2>Problem Statement</h2>
+    <p>Small sites often begin as manually edited HTML files. As those sites grow, navigation diverges, metadata becomes inconsistent, pages are updated unevenly, and deployment artifacts drift from local previews. This system replaces that fragile page-by-page editing approach with a compile-first publishing model in which all major outputs are derived from shared structured input.</p>
+
+    <h2>System Overview</h2>
+    <div class="two-up">
+      <section class="panel">
+        <h3>Core Inputs</h3>
+        <ol>
+          <li>Structured page content</li>
+          <li>Site-wide configuration</li>
+          <li>Shared page template</li>
+          <li>Source assets</li>
+        </ol>
+      </section>
+      <section class="panel">
+        <h3>Core Outputs</h3>
+        <ol>
+          <li>Generated route HTML files</li>
+          <li>Structured data and sitemap artifacts</li>
+          <li>Optimized assets and minified HTML</li>
+          <li>Deployment-ready dist package</li>
+        </ol>
+      </section>
+    </div>
+
+    <h2>Architecture</h2>
+    <p>The page model is stored in <strong>content/pages.json</strong>. Site-wide settings live in <strong>config.js</strong>. A shared renderer in <strong>templates/page.js</strong> produces every page, and <strong>scripts/buildPages.js</strong> writes those pages into the public output tree. Discovery artifacts and optimizations are then layered on top of that generated output before the finished site is copied into <strong>dist</strong>.</p>
+    <p>The pipeline follows a fixed order:</p>
+    <ol>
+      <li>Read content and site configuration</li>
+      <li>Generate route HTML files</li>
+      <li>Inject structured data</li>
+      <li>Generate sitemap, robots, and manifest artifacts</li>
+      <li>Optimize assets, critical CSS, and HTML output</li>
+      <li>Copy the finished site into a deployment directory</li>
+    </ol>
+
+    <h2>Core Components</h2>
+    <div class="two-up">
+      <section class="panel">
+        <h3>Content Model</h3>
+        <p>Each page defines route, navigation label, update cadence, priority, title, description, hero copy, calls to action, and section content. Adding a page is a data operation, not a hand-authored HTML task.</p>
+      </section>
+      <section class="panel">
+        <h3>Template Renderer</h3>
+        <p>The shared page template enforces consistent navigation, layout, footer, asset references, and metadata framing across all routes.</p>
+      </section>
+      <section class="panel">
+        <h3>Metadata Engine</h3>
+        <p>JSON-LD is injected into every route, and aggregate site schema is written as a separate artifact for review and downstream use.</p>
+      </section>
+      <section class="panel">
+        <h3>Performance Layer</h3>
+        <p>Assets are optimized, critical CSS is inlined, and generated HTML is minified before packaging. This improves delivery without requiring a front-end framework.</p>
+      </section>
+    </div>
+
+    <h2>Operational Workflow</h2>
+    <p>The build is executed through simple npm commands:</p>
+    <ul>
+      <li><strong>npm run build:site</strong> generates pages, metadata artifacts, and performance-optimized output.</li>
+      <li><strong>npm run deploy:prepare</strong> rebuilds the site and copies the finished output into the deployment-ready dist directory.</li>
+      <li><strong>npm run preview</strong> serves the generated site locally for route-level inspection before deployment.</li>
+    </ul>
+
+    <h2>Benefits</h2>
+    <ol>
+      <li>Single source of truth for content and routes</li>
+      <li>Consistent navigation, metadata, and page structure</li>
+      <li>Cleaner static-host deployment model</li>
+      <li>Lower maintenance cost as the site grows</li>
+      <li>Built-in performance improvements during publishing</li>
+      <li>Operational clarity through manifest and artifact generation</li>
+    </ol>
+
+    <h2>Current State</h2>
+    <p>The current implementation generates a five-route site: Home, About, Services, Contact, and FAQ. All routes share a common premium-corporate visual system while retaining route-specific content, metadata, and priority values. The output is previewable locally and packageable for static deployment.</p>
+
+    <h2>Limitations</h2>
+    <p>This system is intentionally static-first. It does not currently include a CMS, backend persistence, authentication, or dynamic form processing. Content is still authored manually in structured JSON, which keeps the system simple and deterministic but limits authoring ergonomics for non-technical users.</p>
+
+    <h2>Ideal Use Cases</h2>
+    <ul>
+      <li>Corporate microsites</li>
+      <li>Professional services sites</li>
+      <li>Studio and agency landing networks</li>
+      <li>Investor or portfolio presentation sites</li>
+      <li>Documentation-style static publishing workflows</li>
+    </ul>
+
+    <h2>Future Extensions</h2>
+    <ol>
+      <li>Markdown-driven content sources</li>
+      <li>Multiple templates by page type</li>
+      <li>Reusable template partials</li>
+      <li>Form provider integration</li>
+      <li>CI/CD automation for deployment</li>
+      <li>Additional validation and content governance rules</li>
+    </ol>
+
+    <h2>Conclusion</h2>
+    <p>As a whole, this project is more than a website. It is a structured static publishing system that connects content modeling, route generation, metadata governance, delivery optimization, preview, and deployment packaging into one coherent workflow. Its value comes from system-level consistency and repeatability rather than any one individual script.</p>
+
+    <p class="footer">Prepared on April 28, 2026. Workspace artifact: whitepaper.html</p>
+  </main>
+</body>
+</html>

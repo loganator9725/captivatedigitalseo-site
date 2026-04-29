@@ -1,0 +1,146 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://captivatedigitalseo.com/#organization",
+      "name": "Captivate Digital SEO",
+      "alternateName": "Captivate Digital SEO",
+      "url": "https://captivatedigitalseo.com",
+      "description": "AI-powered SEO, CRM-integrated lead capture, and structured publishing for Captivate Digital.",
+      "email": "hello@captivatedigitalseo.com",
+      "sameAs": [
+        "https://www.linkedin.com/company/example-studio",
+        "https://github.com/example-studio"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://captivatedigitalseo.com/#website",
+      "url": "https://captivatedigitalseo.com",
+      "name": "Captivate Digital SEO",
+      "description": "AI-powered SEO, CRM-integrated lead capture, and structured publishing for Captivate Digital.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/#webpage",
+      "url": "https://captivatedigitalseo.com/",
+      "name": "Performance Starter",
+      "description": "Lean asset delivery, structured data, and a background worker demo for a neutral site starter.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/about/#webpage",
+      "url": "https://captivatedigitalseo.com/about/",
+      "name": "About The Studio",
+      "description": "Learn how the publishing studio approaches performance, metadata, and maintainable content architecture.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/services/#webpage",
+      "url": "https://captivatedigitalseo.com/services/",
+      "name": "Publishing Services",
+      "description": "A neutral example services page for content systems, performance optimization, and static deployment workflows.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/contact/#webpage",
+      "url": "https://captivatedigitalseo.com/contact/",
+      "name": "Contact",
+      "description": "A neutral example contact page for a static publishing site.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/contact/success/#webpage",
+      "url": "https://captivatedigitalseo.com/contact/success/",
+      "name": "Inquiry Received",
+      "description": "Confirmation page for successful contact form submissions.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/contact/error/#webpage",
+      "url": "https://captivatedigitalseo.com/contact/error/",
+      "name": "Submission Problem",
+      "description": "Fallback page for contact form submission issues.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/faq/#webpage",
+      "url": "https://captivatedigitalseo.com/faq/",
+      "name": "FAQ",
+      "description": "Common questions about the site architecture, build pipeline, and deployment workflow.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/case-studies/platform-rollout/#webpage",
+      "url": "https://captivatedigitalseo.com/case-studies/platform-rollout/",
+      "name": "Case Study: Platform Rollout",
+      "description": "A specialized case-study page type for implementation narratives, metrics, and phased delivery notes.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://captivatedigitalseo.com/resources/#webpage",
+      "url": "https://captivatedigitalseo.com/resources/",
+      "name": "Operational Resources",
+      "description": "A reusable long-form page type for guides, playbooks, and structured operational resources.",
+      "isPartOf": {
+        "@id": "https://captivatedigitalseo.com/#website"
+      },
+      "about": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      }
+    }
+  ]
+}

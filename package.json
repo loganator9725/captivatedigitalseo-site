@@ -1,0 +1,38 @@
+{
+  "name": "eecto-vs-gov",
+  "version": "1.0.0",
+  "description": "Performance-only site optimization starter",
+  "main": "scripts/optimizeAssets.js",
+  "scripts": {
+    "clean": "powershell -NoProfile -Command \"Remove-Item -Recurse -Force '.cache','public/assets/optimized' -ErrorAction SilentlyContinue; New-Item -ItemType Directory -Force 'public/assets/optimized' | Out-Null\"",
+    "clean:dist": "powershell -NoProfile -Command \"if (Test-Path 'dist') { Remove-Item -Recurse -Force 'dist' }\"",
+    "build:pages": "node scripts/buildPages.js",
+    "lint": "eslint .",
+    "validate:content": "node scripts/validateContent.js",
+    "validate:fixtures": "node scripts/validateFixtures.js",
+    "optimize:assets": "node scripts/optimizeAssets.js",
+    "critical": "node scripts/criticalPath.js",
+    "minify:html": "node scripts/minifyHtml.js",
+    "generate:schema": "node scripts/generateSchema.js",
+    "generate:sitemap": "node scripts/generateSitemap.js",
+    "generate:robots": "node scripts/generateRobots.js",
+    "publish:manifest": "node scripts/preparePublishManifest.js",
+    "build:perf": "npm run clean && npm run optimize:assets && npm run critical && npm run minify:html",
+    "build:site": "npm run validate:content && npm run build:pages && npm run generate:schema && npm run generate:sitemap && npm run generate:robots && npm run publish:manifest && npm run build:perf",
+    "deploy:prepare": "npm run clean:dist && npm run build:site && node scripts/prepareDeploy.js",
+    "preview": "node scripts/previewServer.js",
+    "test": "npm run validate:fixtures"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "critical": "^7.2.1",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.2.1",
+    "html-minifier-terser": "^7.2.0",
+    "marked": "^18.0.2",
+    "sharp": "^0.34.5"
+  }
+}

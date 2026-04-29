@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structured Static Publishing System Investor Brief</title>
+  <style>
+    :root {
+      --ink: #172132;
+      --muted: #5d6674;
+      --accent: #1d3b63;
+      --line: #d8dee8;
+      --bg: #eef2f7;
+      --paper: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    .page {
+      width: min(8.5in, calc(100% - 2rem));
+      margin: 1rem auto;
+      padding: 0.78in;
+      background: var(--paper);
+      box-shadow: 0 14px 32px rgba(23, 33, 50, 0.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 0.8rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font: 600 2.35rem/1.05 Georgia, "Times New Roman", serif;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 0.9rem 0 1.25rem;
+      font-size: 1.04rem;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+
+    .summary {
+      margin: 0 0 1.5rem;
+      padding: 1rem 1.1rem;
+      background: #f7f9fc;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    h2 {
+      margin: 1.7rem 0 0.7rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--line);
+      font: 600 1.02rem/1.4 "Segoe UI", Arial, sans-serif;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0.65rem 0;
+      font-size: 0.97rem;
+      line-height: 1.72;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+      margin-top: 0.8rem;
+    }
+
+    .card {
+      padding: 0.95rem 1rem;
+      border: 1px solid var(--line);
+      background: #fbfcfe;
+    }
+
+    .card h3 {
+      margin: 0 0 0.45rem;
+      font-size: 0.98rem;
+    }
+
+    .card p,
+    li {
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    ul,
+    ol {
+      margin: 0.55rem 0 0.9rem 1.1rem;
+      padding: 0;
+    }
+
+    .footer {
+      margin-top: 1.8rem;
+      padding-top: 0.7rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: auto;
+        margin: 0;
+        padding: 0.55in;
+        box-shadow: none;
+      }
+
+      .card,
+      .summary,
+      h2 {
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        width: calc(100% - 1rem);
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <p class="eyebrow">Investor Brief</p>
+    <h1>Structured Static Publishing System</h1>
+    <p class="subtitle">A compact publishing platform that generates, governs, optimizes, previews, and packages multi-page static websites from a single structured content model.</p>
+
+    <section class="summary">
+      The system replaces manual page maintenance with a controlled build pipeline. Content is defined once, layouts are rendered from shared templates, metadata is generated automatically, performance optimizations are built in, and the result is packaged into a deployment-ready static artifact.
+    </section>
+
+    <h2>What It Is</h2>
+    <p>This project is not just a website. It is a static publishing system designed for operators who need consistency, low operational overhead, and predictable deployment output. It combines page generation, metadata governance, optimization, preview, and packaging in one repeatable workflow.</p>
+
+    <h2>Core Value Proposition</h2>
+    <div class="grid">
+      <section class="card">
+        <h3>Single Source of Truth</h3>
+        <p>Routes, page content, and metadata all derive from one shared data model instead of manually edited individual files.</p>
+      </section>
+      <section class="card">
+        <h3>Operational Consistency</h3>
+        <p>Navigation, structured data, sitemap coverage, robots rules, and page output stay aligned because they are generated from the same definitions.</p>
+      </section>
+      <section class="card">
+        <h3>Static-First Efficiency</h3>
+        <p>The output is optimized for simple, low-cost hosting while still supporting polished multi-page presentation and discovery artifacts.</p>
+      </section>
+      <section class="card">
+        <h3>Low Complexity Scaling</h3>
+        <p>New pages are added by extending structured content, not by hand-building and synchronizing new HTML files.</p>
+      </section>
+    </div>
+
+    <h2>How It Works</h2>
+    <ol>
+      <li>Structured page definitions are stored in one content file.</li>
+      <li>A shared renderer generates every HTML route from that content.</li>
+      <li>JSON-LD, sitemap, robots, and a publish manifest are generated automatically.</li>
+      <li>Assets are optimized, critical CSS is inlined, and HTML is minified.</li>
+      <li>The final public site is copied into a deployment-ready dist directory.</li>
+    </ol>
+
+    <h2>Current Output</h2>
+    <p>The current implementation generates five routes: Home, About, Services, Contact, and FAQ. All five share one premium corporate visual system and one build pipeline, while preserving route-specific content, metadata, and priority values.</p>
+
+    <h2>Why It Matters</h2>
+    <ul>
+      <li>Reduces content drift across growing sites.</li>
+      <li>Improves publish reliability through deterministic builds.</li>
+      <li>Makes static-site operations easier to govern and audit.</li>
+      <li>Supports faster expansion without multiplying maintenance burden.</li>
+      <li>Improves delivery quality through baked-in optimization steps.</li>
+    </ul>
+
+    <h2>Use Cases</h2>
+    <div class="grid">
+      <section class="card">
+        <h3>Corporate Microsites</h3>
+        <p>Controlled site launches with consistent route structure and easy deployment packaging.</p>
+      </section>
+      <section class="card">
+        <h3>Professional Services</h3>
+        <p>Firm, studio, and consultancy sites that need premium presentation with low operational overhead.</p>
+      </section>
+      <section class="card">
+        <h3>Static Documentation</h3>
+        <p>Content that benefits from route generation and structured metadata without a full application stack.</p>
+      </section>
+      <section class="card">
+        <h3>Investor Or Portfolio Presentations</h3>
+        <p>Compact multi-page sites with polished output and repeatable publishing mechanics.</p>
+      </section>
+    </div>
+
+    <h2>Next-Step Expansion</h2>
+    <p>The architecture can be extended with markdown sources, multiple templates, reusable partials, CI/CD deployment automation, and richer content validation without abandoning the current model.</p>
+
+    <h2>Conclusion</h2>
+    <p>The project’s value is systemic. It unifies content modeling, route generation, metadata governance, delivery optimization, preview, and deployment into one coherent static publishing workflow. That makes it easier to scale, easier to maintain, and easier to operate than a manually managed collection of pages.</p>
+
+    <p class="footer">Prepared on April 28, 2026. Workspace artifact: investor-brief.html</p>
+  </main>
+</body>
+</html>

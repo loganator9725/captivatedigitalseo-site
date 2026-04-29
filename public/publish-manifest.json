@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-04-29T00:42:06.027Z",
+  "site": {
+    "name": "Captivate Digital SEO",
+    "url": "https://captivatedigitalseo.com"
+  },
+  "artifacts": [
+    "index.html",
+    "about/index.html",
+    "services/index.html",
+    "contact/index.html",
+    "contact/success/index.html",
+    "contact/error/index.html",
+    "faq/index.html",
+    "case-studies/platform-rollout/index.html",
+    "resources/index.html",
+    "schema.json",
+    "sitemap.xml",
+    "robots.txt",
+    "assets/optimized/sample-banner.webp"
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Performance Starter",
+      "description": "Lean asset delivery, structured data, and a background worker demo for a neutral site starter."
+    },
+    {
+      "path": "/about/",
+      "title": "About The Studio",
+      "description": "Learn how the publishing studio approaches performance, metadata, and maintainable content architecture."
+    },
+    {
+      "path": "/services/",
+      "title": "Publishing Services",
+      "description": "A neutral example services page for content systems, performance optimization, and static deployment workflows."
+    },
+    {
+      "path": "/contact/",
+      "title": "Contact",
+      "description": "A neutral example contact page for a static publishing site."
+    },
+    {
+      "path": "/contact/success/",
+      "title": "Inquiry Received",
+      "description": "Confirmation page for successful contact form submissions."
+    },
+    {
+      "path": "/contact/error/",
+      "title": "Submission Problem",
+      "description": "Fallback page for contact form submission issues."
+    },
+    {
+      "path": "/faq/",
+      "title": "FAQ",
+      "description": "Common questions about the site architecture, build pipeline, and deployment workflow."
+    },
+    {
+      "path": "/case-studies/platform-rollout/",
+      "title": "Case Study: Platform Rollout",
+      "description": "A specialized case-study page type for implementation narratives, metrics, and phased delivery notes."
+    },
+    {
+      "path": "/resources/",
+      "title": "Operational Resources",
+      "description": "A reusable long-form page type for guides, playbooks, and structured operational resources."
+    }
+  ],
+  "notes": [
+    "This manifest is for local publishing verification only.",
+    "Replace placeholder organization details in config.js before deployment."
+  ]
+}

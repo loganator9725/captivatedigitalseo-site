@@ -1,0 +1,130 @@
+[
+  {
+    "path": "/",
+    "navLabel": "Home",
+    "title": "Valid Root",
+    "description": "Valid fixture root page.",
+    "headline": "Valid Root",
+    "intro": "Root page for positive fixture coverage.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "weekly",
+    "priority": "1.0",
+    "sections": [
+      {
+        "title": "Root",
+        "body": "Valid root section."
+      }
+    ]
+  },
+  {
+    "path": "/contact/",
+    "navLabel": "Contact",
+    "template": "contact",
+    "title": "Valid Contact",
+    "description": "Valid fixture contact page.",
+    "headline": "Valid Contact",
+    "intro": "Valid contact page fixture.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "monthly",
+    "priority": "0.7",
+    "primaryCta": {
+      "label": "Return Home",
+      "href": "/"
+    },
+    "form": {
+      "heading": "Contact us",
+      "description": "Valid fixture form.",
+      "submitLabel": "Send",
+      "successMessage": "Submitted"
+    },
+    "sections": [
+      {
+        "title": "Section",
+        "body": "Valid section body."
+      }
+    ]
+  },
+  {
+    "path": "/case-study/valid/",
+    "navLabel": "Case Study",
+    "template": "case-study",
+    "title": "Valid Case Study",
+    "description": "Valid fixture case study page.",
+    "headline": "Valid Case Study",
+    "intro": "Valid case study fixture.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "monthly",
+    "priority": "0.8",
+    "markdownSource": "case-study-platform-rollout.md",
+    "caseStudy": {
+      "client": "Fixture Client",
+      "engagement": "Migration",
+      "sector": "Services"
+    },
+    "metrics": [
+      {
+        "label": "Routes",
+        "value": "12"
+      },
+      {
+        "label": "Weeks",
+        "value": "4"
+      }
+    ],
+    "phases": [
+      {
+        "title": "Assess",
+        "body": "Assessment phase."
+      },
+      {
+        "title": "Launch",
+        "body": "Launch phase."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Outcome",
+        "body": "Valid case study outcome."
+      }
+    ]
+  },
+  {
+    "path": "/resources/",
+    "navLabel": "Resources",
+    "template": "resource",
+    "title": "Valid Resource",
+    "description": "Valid fixture resource page.",
+    "headline": "Valid Resource",
+    "intro": "Valid resource fixture.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "monthly",
+    "priority": "0.6",
+    "markdownSource": "resources.md",
+    "metrics": [
+      {
+        "label": "Type",
+        "value": "Resource"
+      },
+      {
+        "label": "Mode",
+        "value": "Static"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Highlight One",
+        "body": "First valid highlight."
+      },
+      {
+        "title": "Highlight Two",
+        "body": "Second valid highlight."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Section",
+        "body": "Valid resource section."
+      }
+    ]
+  }
+]

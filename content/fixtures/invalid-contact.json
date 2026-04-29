@@ -1,0 +1,47 @@
+[
+  {
+    "path": "/",
+    "navLabel": "Home",
+    "title": "Home",
+    "description": "Fixture root page to satisfy the root-path requirement.",
+    "headline": "Fixture Root",
+    "intro": "Root page for validation fixtures.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "weekly",
+    "priority": "1.0",
+    "sections": [
+      {
+        "title": "Root",
+        "body": "Fixture root section."
+      }
+    ]
+  },
+  {
+    "path": "/contact/",
+    "navLabel": "Contact Fixture",
+    "template": "contact",
+    "title": "Broken Contact",
+    "description": "Fixture covering invalid contact-form settings.",
+    "headline": "Broken Contact",
+    "intro": "This fixture should fail because form data is incomplete.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "monthly",
+    "priority": "0.7",
+    "primaryCta": {
+      "label": "Bad CTA",
+      "href": "https://example.com/external"
+    },
+    "form": {
+      "heading": "Contact us",
+      "description": "Incomplete fixture form.",
+      "submitLabel": "",
+      "successMessage": "Done"
+    },
+    "sections": [
+      {
+        "title": "Section",
+        "body": "Section body."
+      }
+    ]
+  }
+]

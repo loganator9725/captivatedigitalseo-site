@@ -1,0 +1,70 @@
+[
+  {
+    "path": "/",
+    "navLabel": "Home",
+    "title": "Home",
+    "description": "Fixture root page to satisfy the root-path requirement.",
+    "headline": "Fixture Root",
+    "intro": "Root page for validation fixtures.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "weekly",
+    "priority": "1.0",
+    "sections": [
+      {
+        "title": "Root",
+        "body": "Fixture root section."
+      }
+    ]
+  },
+  {
+    "path": "landing",
+    "navLabel": "Landing",
+    "title": "Invalid Path",
+    "description": "Fixture covering invalid path formats.",
+    "headline": "Invalid Path",
+    "intro": "This fixture should fail because the path is malformed.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "monthly",
+    "priority": "0.6",
+    "sections": [
+      {
+        "title": "Section",
+        "body": "Section body."
+      }
+    ]
+  },
+  {
+    "path": "/about/",
+    "navLabel": "About Duplicate A",
+    "title": "About A",
+    "description": "First duplicate path fixture.",
+    "headline": "About A",
+    "intro": "Duplicate path fixture A.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "monthly",
+    "priority": "0.5",
+    "sections": [
+      {
+        "title": "Section",
+        "body": "Section body."
+      }
+    ]
+  },
+  {
+    "path": "/about/",
+    "navLabel": "About Duplicate B",
+    "title": "About B",
+    "description": "Second duplicate path fixture.",
+    "headline": "About B",
+    "intro": "Duplicate path fixture B.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "monthly",
+    "priority": "0.5",
+    "sections": [
+      {
+        "title": "Section",
+        "body": "Section body."
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "path": "/",
+    "navLabel": "Home",
+    "title": "Home",
+    "description": "Fixture root page to satisfy the root-path requirement.",
+    "headline": "Fixture Root",
+    "intro": "Root page for validation fixtures.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "weekly",
+    "priority": "1.0",
+    "sections": [
+      {
+        "title": "Root",
+        "body": "Fixture root section."
+      }
+    ]
+  },
+  {
+    "path": "/case-studies/fixture/",
+    "navLabel": "Case Study Fixture",
+    "template": "case-study",
+    "title": "Broken Case Study",
+    "description": "Fixture covering missing case-study structure.",
+    "headline": "Broken Case Study",
+    "intro": "This fixture should fail because it does not satisfy the case-study contract.",
+    "heroImageAlt": "Fixture image",
+    "changefreq": "monthly",
+    "priority": "0.7",
+    "markdownSource": "about.md",
+    "caseStudy": {
+      "client": "Fixture Client",
+      "engagement": "Audit"
+    },
+    "metrics": [
+      {
+        "label": "Only one metric",
+        "value": "1"
+      }
+    ],
+    "phases": [
+      {
+        "title": "Only phase",
+        "body": "Missing second phase."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Section",
+        "body": "Section body."
+      }
+    ]
+  }
+]

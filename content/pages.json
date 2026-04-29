@@ -1,0 +1,356 @@
+[
+  {
+    "path": "/",
+    "navLabel": "Home",
+    "changefreq": "weekly",
+    "priority": "1.0",
+    "title": "Performance Starter",
+    "description": "Lean asset delivery, structured data, and a background worker demo for a neutral site starter.",
+    "eyebrow": "Neutral Publishing Build",
+    "headline": "Captivate Digital AI",
+    "intro": "This starter page validates image optimization, critical CSS extraction, sitemap generation, structured data injection, and a background worker.",
+    "primaryCta": {
+      "label": "Explore Services",
+      "href": "/services/"
+    },
+    "interactiveWidget": true,
+    "heroImageAlt": "Abstract performance banner",
+    "sections": [
+      {
+        "title": "Site Generation",
+        "body": "Generate every page from shared data and one template so navigation, metadata, and layout stay consistent."
+      },
+      {
+        "title": "Performance",
+        "body": "Optimize images, inline critical CSS, and minify generated HTML before packaging the final site."
+      },
+      {
+        "title": "Deployment",
+        "body": "Publish the same generated output to preview and dist, which removes drift between local and deployed builds."
+      }
+    ]
+  },
+  {
+    "path": "/about/",
+    "navLabel": "About",
+    "template": "standard",
+    "changefreq": "monthly",
+    "priority": "0.8",
+    "title": "About The Studio",
+    "description": "Learn how the publishing studio approaches performance, metadata, and maintainable content architecture.",
+    "eyebrow": "About",
+    "headline": "The site architecture is built to keep content changes simple and delivery fast.",
+    "intro": "A shared template, a structured page model, and recursive build steps make the site easier to maintain as it grows.",
+    "markdownSource": "about.md",
+    "primaryCta": {
+      "label": "View Contact",
+      "href": "/contact/"
+    },
+    "heroImageAlt": "Abstract performance banner",
+    "sections": [
+      {
+        "title": "Shared Layout",
+        "body": "Navigation, footer, metadata, and asset links are generated from a single source instead of copied by hand."
+      },
+      {
+        "title": "Config Driven",
+        "body": "Page titles, descriptions, and content blocks live in one content file, which makes adding routes routine instead of risky."
+      },
+      {
+        "title": "Predictable Output",
+        "body": "Each route becomes its own folder with an index.html file, which works cleanly for static hosting."
+      }
+    ]
+  },
+  {
+    "path": "/services/",
+    "navLabel": "Services",
+    "template": "standard",
+    "changefreq": "monthly",
+    "priority": "0.9",
+    "title": "Publishing Services",
+    "description": "A neutral example services page for content systems, performance optimization, and static deployment workflows.",
+    "eyebrow": "Services",
+    "headline": "Use one build pipeline for content generation, optimization, and deployment packaging.",
+    "intro": "This page shows how a services route can reuse the same layout and page model while exposing different content.",
+    "primaryCta": {
+      "label": "Read About",
+      "href": "/about/"
+    },
+    "heroImageAlt": "Abstract performance banner",
+    "sections": [
+      {
+        "title": "Content Modeling",
+        "body": "Keep route-specific copy in data files and let the build system render consistent pages automatically."
+      },
+      {
+        "title": "Metadata Hygiene",
+        "body": "Generate sitemap, robots, and structured data from the same route list to avoid inconsistencies."
+      },
+      {
+        "title": "Static Delivery",
+        "body": "Package the built output into a dist folder that can be dropped onto common static hosts without extra steps."
+      }
+    ]
+  },
+  {
+    "path": "/contact/",
+    "navLabel": "Contact",
+    "template": "contact",
+    "changefreq": "monthly",
+    "priority": "0.7",
+    "title": "Contact",
+    "description": "A neutral example contact page for a static publishing site.",
+    "eyebrow": "Contact",
+    "headline": "A multi-page site needs stable routes for both people and crawlers to follow.",
+    "intro": "Use this route for contact details, next steps, or a handoff to a form provider once the core static site is in place.",
+    "primaryCta": {
+      "label": "Back Home",
+      "href": "/"
+    },
+    "form": {
+      "heading": "Request a conversation",
+      "description": "Use the embedded GHL CRM form to route qualified inquiries directly into your lead pipeline.",
+      "submitLabel": "Send Inquiry",
+      "successMessage": "After submission, GHL can redirect to your controlled success or error route."
+    },
+    "heroImageAlt": "Abstract performance banner",
+    "sections": [
+      {
+        "title": "Preview Locally",
+        "body": "Run the preview server to inspect nested routes and generated metadata before deployment."
+      },
+      {
+        "title": "Deploy Safely",
+        "body": "Prepare dist after every build so the same artifact can be tested and published."
+      },
+      {
+        "title": "Scale Later",
+        "body": "When you outgrow static content, keep the same route model and swap the renderer instead of rewriting the whole site."
+      }
+    ]
+  },
+  {
+    "path": "/contact/success/",
+    "navLabel": "Contact Success",
+    "includeInNav": false,
+    "template": "article",
+    "changefreq": "monthly",
+    "priority": "0.3",
+    "title": "Inquiry Received",
+    "description": "Confirmation page for successful contact form submissions.",
+    "eyebrow": "Success",
+    "headline": "Your inquiry has been received and routed to the configured intake flow.",
+    "intro": "This page is intended to be used as the success redirect target for your hosted form provider.",
+    "primaryCta": {
+      "label": "Return Home",
+      "href": "/"
+    },
+    "heroImageAlt": "Abstract performance banner",
+    "sections": [
+      {
+        "title": "Submission Complete",
+        "body": "The hosted provider accepted the submission and redirected the visitor back to a controlled first-party route."
+      },
+      {
+        "title": "Operational Continuity",
+        "body": "A dedicated success route lets the site keep a consistent experience after form handoff without requiring a custom backend."
+      },
+      {
+        "title": "Next Step",
+        "body": "Use this page for follow-up expectations, routing details, or conversion tracking tags."
+      }
+    ]
+  },
+  {
+    "path": "/contact/error/",
+    "navLabel": "Contact Error",
+    "includeInNav": false,
+    "template": "article",
+    "changefreq": "monthly",
+    "priority": "0.3",
+    "title": "Submission Problem",
+    "description": "Fallback page for contact form submission issues.",
+    "eyebrow": "Error",
+    "headline": "The provider could not complete the submission with the current request.",
+    "intro": "This route acts as a controlled error redirect so the user stays on a first-party page even if provider validation fails.",
+    "primaryCta": {
+      "label": "Try Contact Again",
+      "href": "/contact/"
+    },
+    "heroImageAlt": "Abstract performance banner",
+    "sections": [
+      {
+        "title": "Recover Cleanly",
+        "body": "Send the visitor back to the form or provide alternate contact instructions when the provider rejects the submission."
+      },
+      {
+        "title": "Preserve Trust",
+        "body": "An explicit error route prevents the submission flow from ending on a generic third-party error page."
+      },
+      {
+        "title": "Debug Later",
+        "body": "If needed, add analytics or logging cues here to identify common provider-side failure patterns."
+      }
+    ]
+  },
+  {
+    "path": "/faq/",
+    "navLabel": "FAQ",
+    "template": "article",
+    "changefreq": "monthly",
+    "priority": "0.6",
+    "title": "FAQ",
+    "description": "Common questions about the site architecture, build pipeline, and deployment workflow.",
+    "eyebrow": "FAQ",
+    "headline": "Answers to the questions that usually come up once a static site starts growing.",
+    "intro": "This route shows how the same template can support another content page without any manual HTML duplication.",
+    "markdownSource": "faq.md",
+    "primaryCta": {
+      "label": "Contact Us",
+      "href": "/contact/"
+    },
+    "heroImageAlt": "Abstract performance banner",
+    "sections": [
+      {
+        "title": "How are pages created?",
+        "body": "Pages are generated from structured content data and one shared template, so layout changes apply everywhere at once."
+      },
+      {
+        "title": "How do I add a route?",
+        "body": "Add a new object to the content file, rerun the build, and the navigation, sitemap, schema, and output pages update automatically."
+      },
+      {
+        "title": "What gets deployed?",
+        "body": "The public site is processed, optimized, and then copied into dist, which is the folder intended for static hosting."
+      }
+    ]
+  },
+  {
+    "path": "/case-studies/platform-rollout/",
+    "navLabel": "Case Study",
+    "template": "case-study",
+    "changefreq": "monthly",
+    "priority": "0.75",
+    "title": "Case Study: Platform Rollout",
+    "description": "A specialized case-study page type for implementation narratives, metrics, and phased delivery notes.",
+    "eyebrow": "Case Study",
+    "headline": "A phased rollout story can live inside the same publishing system without falling back to ad hoc HTML.",
+    "intro": "This route demonstrates a dedicated case-study renderer with client metadata, metrics, a phase timeline, and narrative body content.",
+    "markdownSource": "case-study-platform-rollout.md",
+    "primaryCta": {
+      "label": "Start a Conversation",
+      "href": "/contact/"
+    },
+    "heroImageAlt": "Abstract performance banner",
+    "caseStudy": {
+      "client": "North Coast Advisory",
+      "engagement": "Static publishing rollout",
+      "sector": "Professional services",
+      "quote": "The structured rollout let us ship a cleaner content system without taking on a custom application stack.",
+      "quoteAttribution": "Operations Lead, North Coast Advisory"
+    },
+    "metrics": [
+      {
+        "label": "Routes migrated",
+        "value": "24"
+      },
+      {
+        "label": "Deployment window",
+        "value": "3 weeks"
+      },
+      {
+        "label": "Templates used",
+        "value": "5"
+      }
+    ],
+    "phases": [
+      {
+        "title": "Content Inventory",
+        "body": "The existing route set was normalized into a single structured content inventory before any visual migration work began."
+      },
+      {
+        "title": "Template Mapping",
+        "body": "Pages were grouped by page type so a small number of reusable renderers could replace one-off HTML and duplicated metadata."
+      },
+      {
+        "title": "Governed Launch",
+        "body": "Validation, preview, and deployment packaging were run through the same pipeline to reduce release drift."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Business Outcome",
+        "body": "The case-study format captures implementation detail while still fitting inside the static publishing pipeline used by every other page."
+      },
+      {
+        "title": "Template Reuse",
+        "body": "A dedicated renderer handles narrative structure, but the route still inherits navigation, schema generation, sitemap updates, and asset optimization."
+      },
+      {
+        "title": "Operational Fit",
+        "body": "This pattern works well for delivery summaries, implementation retrospectives, and client-facing project writeups."
+      }
+    ]
+  },
+  {
+    "path": "/resources/",
+    "navLabel": "Resources",
+    "template": "resource",
+    "changefreq": "monthly",
+    "priority": "0.65",
+    "title": "Operational Resources",
+    "description": "A reusable long-form page type for guides, playbooks, and structured operational resources.",
+    "eyebrow": "Resources",
+    "headline": "A fourth template type can support operational content without breaking the shared system.",
+    "intro": "This route demonstrates a dedicated resource template for longer guidance, lightweight metrics, and reusable highlight cards.",
+    "markdownSource": "resources.md",
+    "primaryCta": {
+      "label": "Open Contact",
+      "href": "/contact/"
+    },
+    "heroImageAlt": "Abstract performance banner",
+    "metrics": [
+      {
+        "label": "Content Model",
+        "value": "Structured"
+      },
+      {
+        "label": "Template Type",
+        "value": "Resource"
+      },
+      {
+        "label": "Publishing Mode",
+        "value": "Static"
+      }
+    ],
+    "highlights": [
+      {
+        "title": "Long-form Friendly",
+        "body": "Markdown-backed body copy can grow without making the route definition noisy or difficult to scan."
+      },
+      {
+        "title": "Operational Metadata",
+        "body": "Small metrics and highlight cards make it easier to present structured implementation notes alongside narrative content."
+      },
+      {
+        "title": "Reusable Surface",
+        "body": "The new template proves the dispatcher can support additional page types without changing the broader build pipeline."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Use Cases",
+        "body": "Use this page type for guides, policy pages, implementation notes, or internal playbooks that need more structure than a basic marketing page."
+      },
+      {
+        "title": "Shared Delivery",
+        "body": "Even with a new layout, the route still inherits shared navigation, metadata generation, schema, minification, and packaging."
+      },
+      {
+        "title": "Future Scaling",
+        "body": "Additional page types can be added the same way as long as they stay inside the validated content contract."
+      }
+    ]
+  }
+]
