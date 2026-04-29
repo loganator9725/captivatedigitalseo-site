@@ -9,10 +9,10 @@
       "url": "https://captivatedigitalseo.com",
       "description": "AI-powered SEO, CRM-integrated lead capture, and structured publishing for Captivate Digital.",
       "email": "hello@captivatedigitalseo.com",
-      "sameAs": [
-        "https://www.linkedin.com/company/example-studio",
-        "https://github.com/example-studio"
-      ]
+      "sameAs": [],
+      "founder": {
+        "@id": "https://captivatedigitalseo.com/#representative"
+      }
     },
     {
       "@type": "WebSite",
@@ -29,8 +29,8 @@
       "@type": "WebPage",
       "@id": "https://captivatedigitalseo.com/#webpage",
       "url": "https://captivatedigitalseo.com/",
-      "name": "Performance Starter",
-      "description": "Lean asset delivery, structured data, and a background worker demo for a neutral site starter.",
+      "name": "Captivate Digital AI | Darnell Disroe",
+      "description": "Captivate Digital AI is the SEO and lead-generation platform led by Darnell Disroe for local growth and conversion-focused publishing.",
       "isPartOf": {
         "@id": "https://captivatedigitalseo.com/#website"
       },
@@ -42,8 +42,8 @@
       "@type": "WebPage",
       "@id": "https://captivatedigitalseo.com/about/#webpage",
       "url": "https://captivatedigitalseo.com/about/",
-      "name": "About The Studio",
-      "description": "Learn how the publishing studio approaches performance, metadata, and maintainable content architecture.",
+      "name": "About Darnell Disroe | Captivate Digital SEO",
+      "description": "Learn how Darnell Disroe leads Captivate Digital SEO through search strategy, structured publishing, and lead capture systems.",
       "isPartOf": {
         "@id": "https://captivatedigitalseo.com/#website"
       },
@@ -69,7 +69,7 @@
       "@id": "https://captivatedigitalseo.com/contact/#webpage",
       "url": "https://captivatedigitalseo.com/contact/",
       "name": "Contact",
-      "description": "A neutral example contact page for a static publishing site.",
+      "description": "Contact Captivate Digital SEO and Darnell Disroe through the embedded CRM intake form.",
       "isPartOf": {
         "@id": "https://captivatedigitalseo.com/#website"
       },
@@ -141,6 +141,17 @@
       "about": {
         "@id": "https://captivatedigitalseo.com/#organization"
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://captivatedigitalseo.com/#representative",
+      "name": "Darnell Disroe",
+      "jobTitle": "Founder, Captivate Digital SEO",
+      "url": "https://captivatedigitalseo.com/about/",
+      "worksFor": {
+        "@id": "https://captivatedigitalseo.com/#organization"
+      },
+      "sameAs": []
     }
   ]
 }

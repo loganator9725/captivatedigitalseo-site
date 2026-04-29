@@ -1,11 +1,11 @@
-## Shared Model
+## Who is Darnell Disroe?
 
-The publishing system uses one structured page inventory to generate every route, which keeps navigation, metadata, and page output aligned.
+Darnell Disroe is the named representative presented through Captivate Digital SEO. This site is structured to show the relationship between the person, the business brand, and the services being offered.
 
-## Controlled Rendering
+## How the business is presented
 
-Templates define the shared presentation layer. This means layout changes are made once and then reflected across the entire site on the next build.
+Captivate Digital SEO remains the operating brand, while Darnell Disroe is surfaced as the founder or public-facing representative so visitors can understand who stands behind the work.
 
-## Operational Simplicity
+## Why this matters for search
 
-The site remains static-first, which keeps deployment lightweight while still supporting multiple pages, structured data, and strong delivery performance.
+When page copy, metadata, and schema all describe the same business-person relationship, the site sends clearer signals to both users and search engines.

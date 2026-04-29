@@ -4,11 +4,11 @@
     "navLabel": "Home",
     "changefreq": "weekly",
     "priority": "1.0",
-    "title": "Performance Starter",
-    "description": "Lean asset delivery, structured data, and a background worker demo for a neutral site starter.",
-    "eyebrow": "Neutral Publishing Build",
+    "title": "Captivate Digital AI | Darnell Disroe",
+    "description": "Captivate Digital AI is the SEO and lead-generation platform led by Darnell Disroe for local growth and conversion-focused publishing.",
+    "eyebrow": "Captivate Digital SEO",
     "headline": "Captivate Digital AI",
-    "intro": "This starter page validates image optimization, critical CSS extraction, sitemap generation, structured data injection, and a background worker.",
+    "intro": "Captivate Digital AI is the search and conversion system presented by Darnell Disroe through Captivate Digital SEO.",
     "primaryCta": {
       "label": "Explore Services",
       "href": "/services/"
@@ -17,16 +17,16 @@
     "heroImageAlt": "Abstract performance banner",
     "sections": [
       {
-        "title": "Site Generation",
-        "body": "Generate every page from shared data and one template so navigation, metadata, and layout stay consistent."
+        "title": "Search Visibility",
+        "body": "Captivate Digital SEO uses structured pages and clear metadata to help prospects find the business and understand its services quickly."
       },
       {
-        "title": "Performance",
-        "body": "Optimize images, inline critical CSS, and minify generated HTML before packaging the final site."
+        "title": "Lead Capture",
+        "body": "The site routes inbound interest into the embedded CRM workflow so Darnell Disroe can follow up through a controlled lead pipeline."
       },
       {
-        "title": "Deployment",
-        "body": "Publish the same generated output to preview and dist, which removes drift between local and deployed builds."
+        "title": "Brand Clarity",
+        "body": "The site now presents Captivate Digital SEO and Darnell Disroe together so the business and representative are aligned across content and schema."
       }
     ]
   },
@@ -36,11 +36,11 @@
     "template": "standard",
     "changefreq": "monthly",
     "priority": "0.8",
-    "title": "About The Studio",
-    "description": "Learn how the publishing studio approaches performance, metadata, and maintainable content architecture.",
+    "title": "About Darnell Disroe | Captivate Digital SEO",
+    "description": "Learn how Darnell Disroe leads Captivate Digital SEO through search strategy, structured publishing, and lead capture systems.",
     "eyebrow": "About",
-    "headline": "The site architecture is built to keep content changes simple and delivery fast.",
-    "intro": "A shared template, a structured page model, and recursive build steps make the site easier to maintain as it grows.",
+    "headline": "Darnell Disroe is the named representative behind Captivate Digital SEO.",
+    "intro": "This page explains who Darnell Disroe is in relation to Captivate Digital SEO and how the business approaches search visibility, publishing, and lead generation.",
     "markdownSource": "about.md",
     "primaryCta": {
       "label": "View Contact",
@@ -49,16 +49,16 @@
     "heroImageAlt": "Abstract performance banner",
     "sections": [
       {
-        "title": "Shared Layout",
-        "body": "Navigation, footer, metadata, and asset links are generated from a single source instead of copied by hand."
+        "title": "Named Representation",
+        "body": "The site now identifies Darnell Disroe directly so visitors and search engines can connect the person and the business truthfully."
       },
       {
-        "title": "Config Driven",
-        "body": "Page titles, descriptions, and content blocks live in one content file, which makes adding routes routine instead of risky."
+        "title": "Service Positioning",
+        "body": "Captivate Digital SEO is positioned as the operating brand while Darnell Disroe is presented as the founder or public-facing representative."
       },
       {
-        "title": "Predictable Output",
-        "body": "Each route becomes its own folder with an index.html file, which works cleanly for static hosting."
+        "title": "Search Consistency",
+        "body": "Page copy, metadata, and schema now reinforce the same relationship between the business brand and Darnell Disroe."
       }
     ]
   },
@@ -100,10 +100,10 @@
     "changefreq": "monthly",
     "priority": "0.7",
     "title": "Contact",
-    "description": "A neutral example contact page for a static publishing site.",
+    "description": "Contact Captivate Digital SEO and Darnell Disroe through the embedded CRM intake form.",
     "eyebrow": "Contact",
-    "headline": "A multi-page site needs stable routes for both people and crawlers to follow.",
-    "intro": "Use this route for contact details, next steps, or a handoff to a form provider once the core static site is in place.",
+    "headline": "Contact Darnell Disroe through Captivate Digital SEO.",
+    "intro": "Use this route to reach Darnell Disroe through the Captivate Digital SEO CRM workflow for search, publishing, and lead-generation discussions.",
     "primaryCta": {
       "label": "Back Home",
       "href": "/"
@@ -117,16 +117,16 @@
     "heroImageAlt": "Abstract performance banner",
     "sections": [
       {
-        "title": "Preview Locally",
-        "body": "Run the preview server to inspect nested routes and generated metadata before deployment."
+        "title": "Lead Intake",
+        "body": "The embedded CRM form routes inquiry details directly into the Captivate Digital SEO follow-up workflow managed by Darnell Disroe."
       },
       {
-        "title": "Deploy Safely",
-        "body": "Prepare dist after every build so the same artifact can be tested and published."
+        "title": "Response Path",
+        "body": "Success and error redirects keep the user on a first-party route while the business handles next steps behind the form submission."
       },
       {
-        "title": "Scale Later",
-        "body": "When you outgrow static content, keep the same route model and swap the renderer instead of rewriting the whole site."
+        "title": "Business Contact",
+        "body": "This page is the direct contact path for prospects who want to work with Captivate Digital SEO and Darnell Disroe."
       }
     ]
   },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T00:42:06.027Z",
+  "generatedAt": "2026-04-29T06:04:48.373Z",
   "site": {
     "name": "Captivate Digital SEO",
     "url": "https://captivatedigitalseo.com"
@@ -22,13 +22,13 @@
   "pages": [
     {
       "path": "/",
-      "title": "Performance Starter",
-      "description": "Lean asset delivery, structured data, and a background worker demo for a neutral site starter."
+      "title": "Captivate Digital AI | Darnell Disroe",
+      "description": "Captivate Digital AI is the SEO and lead-generation platform led by Darnell Disroe for local growth and conversion-focused publishing."
     },
     {
       "path": "/about/",
-      "title": "About The Studio",
-      "description": "Learn how the publishing studio approaches performance, metadata, and maintainable content architecture."
+      "title": "About Darnell Disroe | Captivate Digital SEO",
+      "description": "Learn how Darnell Disroe leads Captivate Digital SEO through search strategy, structured publishing, and lead capture systems."
     },
     {
       "path": "/services/",
@@ -38,7 +38,7 @@
     {
       "path": "/contact/",
       "title": "Contact",
-      "description": "A neutral example contact page for a static publishing site."
+      "description": "Contact Captivate Digital SEO and Darnell Disroe through the embedded CRM intake form."
     },
     {
       "path": "/contact/success/",

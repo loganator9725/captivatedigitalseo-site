@@ -24,6 +24,26 @@ const organizationSchema = {
   sameAs: config.organization.sameAs,
 };
 
+const personSchema = config.representative.name
+  ? {
+      '@type': 'Person',
+      '@id': `${config.site.url}/#representative`,
+      name: config.representative.name,
+      jobTitle: config.representative.jobTitle,
+      url: config.representative.pageUrl || `${config.site.url}/about/`,
+      worksFor: {
+        '@id': `${config.site.url}/#organization`,
+      },
+      sameAs: config.representative.sameAs,
+    }
+  : null;
+
+if (personSchema) {
+  organizationSchema.founder = {
+    '@id': personSchema['@id'],
+  };
+}
+
 const websiteSchema = {
   '@type': 'WebSite',
   '@id': `${config.site.url}/#website`,
@@ -54,7 +74,7 @@ for (const page of config.pages) {
   const htmlPath = getHtmlPath(page.path);
   const pageSchema = {
     '@context': 'https://schema.org',
-    '@graph': [organizationSchema, websiteSchema, pageGraph.find((entry) => entry.url === `${config.site.url}${page.path}`)],
+    '@graph': [organizationSchema, websiteSchema, pageGraph.find((entry) => entry.url === `${config.site.url}${page.path}`), personSchema].filter(Boolean),
   };
   const schemaMarkup = `<script id="site-schema" type="application/ld+json">${JSON.stringify(pageSchema)}</script>`;
   const existingHtml = fs.readFileSync(htmlPath, 'utf8');
@@ -69,7 +89,7 @@ for (const page of config.pages) {
 
 fs.writeFileSync(
   schemaPath,
-  JSON.stringify({ '@context': 'https://schema.org', '@graph': [organizationSchema, websiteSchema, ...pageGraph] }, null, 2)
+  JSON.stringify({ '@context': 'https://schema.org', '@graph': [organizationSchema, websiteSchema, ...pageGraph, personSchema].filter(Boolean) }, null, 2)
 );
 
 console.log('Generated schema and injected it into all public HTML pages');

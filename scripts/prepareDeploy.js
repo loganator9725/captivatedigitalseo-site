@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { URL } = require('url');
 const config = require('../config');
 
 const publicDir = path.resolve(__dirname, '../public');

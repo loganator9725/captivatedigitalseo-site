@@ -41,10 +41,13 @@ module.exports = {
     legalName: process.env.ORG_LEGAL_NAME || 'Example Publishing Studio LLC',
     alternateName: process.env.ORG_ALT_NAME || 'Example Studio',
     email: process.env.ORG_EMAIL || 'hello@example.com',
-    sameAs: [
-      process.env.ORG_LINKEDIN || 'https://www.linkedin.com/company/example-studio',
-      process.env.ORG_GITHUB || 'https://github.com/example-studio',
-    ].filter(Boolean),
+    sameAs: [process.env.ORG_LINKEDIN || '', process.env.ORG_GITHUB || ''].filter(Boolean),
+  },
+  representative: {
+    name: process.env.REPRESENTATIVE_NAME || '',
+    jobTitle: process.env.REPRESENTATIVE_TITLE || '',
+    pageUrl: process.env.REPRESENTATIVE_PAGE_URL || '',
+    sameAs: [process.env.REPRESENTATIVE_LINKEDIN || '', process.env.REPRESENTATIVE_X || ''].filter(Boolean),
   },
   forms: {
     providerName: process.env.FORM_PROVIDER_NAME || 'Hosted Form Provider',
