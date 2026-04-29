@@ -4,8 +4,8 @@
   "description": "Performance-only site optimization starter",
   "main": "scripts/optimizeAssets.js",
   "scripts": {
-    "clean": "powershell -NoProfile -Command \"Remove-Item -Recurse -Force '.cache','public/assets/optimized' -ErrorAction SilentlyContinue; New-Item -ItemType Directory -Force 'public/assets/optimized' | Out-Null\"",
-    "clean:dist": "powershell -NoProfile -Command \"if (Test-Path 'dist') { Remove-Item -Recurse -Force 'dist' }\"",
+    "clean": "node scripts/clean.js",
+    "clean:dist": "node scripts/cleanDist.js",
     "build:pages": "node scripts/buildPages.js",
     "lint": "eslint .",
     "validate:content": "node scripts/validateContent.js",
