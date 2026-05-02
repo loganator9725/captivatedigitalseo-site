@@ -4,11 +4,11 @@ const { URL } = require('url');
 
 const { loadPages } = require('./scripts/lib/contentLoader');
 
-const siteUrl = process.env.SITE_URL || 'https://example.com';
-const siteName = process.env.SITE_NAME || 'Example Publishing Studio';
+const siteUrl = process.env.SITE_URL || 'https://darnelldisroe.com';
+const siteName = process.env.SITE_NAME || 'Darnell Disroe';
 const siteDescription =
   process.env.SITE_DESCRIPTION ||
-  'A neutral starter for structured data, sitemap generation, and front-end performance work.';
+  'Official site for Darnell Disroe with structured publishing, SEO metadata, and lead-generation workflows.';
 
 function resolveConfiguredUrl(value, baseUrl) {
   if (!value) {
@@ -38,20 +38,20 @@ module.exports = {
     language: process.env.SITE_LANGUAGE || 'en',
   },
   organization: {
-    legalName: process.env.ORG_LEGAL_NAME || 'Example Publishing Studio LLC',
-    alternateName: process.env.ORG_ALT_NAME || 'Example Studio',
-    email: process.env.ORG_EMAIL || 'hello@example.com',
+    legalName: process.env.ORG_LEGAL_NAME || 'Darnell Disroe LLC',
+    alternateName: process.env.ORG_ALT_NAME || 'Darnell Disroe',
+    email: process.env.ORG_EMAIL || 'hello@darnelldisroe.com',
     sameAs: [process.env.ORG_LINKEDIN || '', process.env.ORG_GITHUB || ''].filter(Boolean),
   },
   representative: {
-    name: process.env.REPRESENTATIVE_NAME || '',
-    jobTitle: process.env.REPRESENTATIVE_TITLE || '',
-    pageUrl: process.env.REPRESENTATIVE_PAGE_URL || '',
+    name: process.env.REPRESENTATIVE_NAME || 'Darnell Disroe',
+    jobTitle: process.env.REPRESENTATIVE_TITLE || 'Founder',
+    pageUrl: process.env.REPRESENTATIVE_PAGE_URL || 'https://darnelldisroe.com/about/',
     sameAs: [process.env.REPRESENTATIVE_LINKEDIN || '', process.env.REPRESENTATIVE_X || ''].filter(Boolean),
   },
   forms: {
     providerName: process.env.FORM_PROVIDER_NAME || 'Hosted Form Provider',
-    providerAction: process.env.FORM_PROVIDER_ACTION || 'https://example.com/form-endpoint',
+    providerAction: process.env.FORM_PROVIDER_ACTION || 'https://darnelldisroe.com/form-endpoint',
     method: process.env.FORM_PROVIDER_METHOD || 'POST',
     successRedirect: resolveConfiguredUrl(process.env.FORM_SUCCESS_REDIRECT || '/contact/success/', siteUrl),
     errorRedirect: resolveConfiguredUrl(process.env.FORM_ERROR_REDIRECT || '/contact/error/', siteUrl),
