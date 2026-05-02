@@ -1,0 +1,52 @@
+{
+  "metrics": [
+    {
+      "strategy": "hybrid",
+      "responseTimeMs": 68,
+      "energyCost": 0.14,
+      "timestamp": "2025-01-19T10:00:00Z"
+    },
+    {
+      "strategy": "cache-first",
+      "responseTimeMs": 45,
+      "energyCost": 0.08,
+      "timestamp": "2025-01-19T10:01:00Z"
+    },
+    {
+      "strategy": "db-priority",
+      "responseTimeMs": 125,
+      "energyCost": 0.21,
+      "timestamp": "2025-01-19T10:02:00Z"
+    },
+    {
+      "strategy": "edge-compute",
+      "responseTimeMs": 82,
+      "energyCost": 0.12,
+      "timestamp": "2025-01-19T10:03:00Z"
+    },
+    {
+      "strategy": "hybrid",
+      "responseTimeMs": 71,
+      "energyCost": 0.15,
+      "timestamp": "2025-01-19T10:04:00Z"
+    },
+    {
+      "strategy": "cache-first",
+      "responseTimeMs": 48,
+      "energyCost": 0.09,
+      "timestamp": "2025-01-19T10:05:00Z"
+    },
+    {
+      "strategy": "edge-compute",
+      "responseTimeMs": 78,
+      "energyCost": 0.11,
+      "timestamp": "2025-01-19T10:06:00Z"
+    },
+    {
+      "strategy": "hybrid",
+      "responseTimeMs": 65,
+      "energyCost": 0.13,
+      "timestamp": "2025-01-19T10:07:00Z"
+    }
+  ]
+}
